@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e2f;
+      color: white;
+      padding: 20px;
+    }
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      margin-top: 20px;
+    }
+    #prices {
+      background-color: #2a2a3b;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Crypto Dashboard</h1>
+  
+  <!-- Prices section updated by JavaScript -->
+  <div id="prices">Loading prices...</div>
+
+  <!-- Iframe for external crypto widget -->
+  <iframe src="https://crypto.com/price/cronos" title="Crypto Prices"></iframe>
+
+  <!-- Link the external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
